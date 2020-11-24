@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="css/style.css">
+
+   <title>Pomodoro</title>
+</head>
+
+<body>
+   <div class="container">
+      <h1>Pomodoro Timer</h1>
+
+      <div id="pomodoro">
+         <div id="status"></div>
+         <div class="timerDisplay">25:00</div>
+         <button id="start-btn" class="btn">START</button>
+      </div>
+
+      <div class="settings">
+         <div id="work">
+            <p>Work Duration</p>
+            <button class="btn-settings" id="work-plus">+</button>
+            <div><span id="work-min">25</span> mins</div>
+            <button class="btn-settings" id="work-minus">-</button>
+         </div>
+
+         <button id="reset" class="btn"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+
+         <div id="break">
+            <p>Break Duration</p>
+            <button class="btn-settings" id="break-plus">+</button>
+            <div><span id="break-min">5</span> mins</div>
+            <button class="btn-settings" id="break-minus">-</button>
+         </div>
+      </div>
+   </div>
+
+   <script src="src/index.js"></script>
+</body>
+
+</html>
