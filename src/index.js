@@ -66,6 +66,7 @@ let incrementFunctions = {
 };
 
 for (var key in incrementFunctions) {
+	console.log(key);
 	if (incrementFunctions.hasOwnProperty(key)) {
 		document.querySelector(key).onclick = incrementFunctions[key];
 	}
